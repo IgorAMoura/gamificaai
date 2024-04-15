@@ -1,0 +1,129 @@
+@font-face
+{   font-family: "Montserrat";
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf); }
+
+:root
+{   --roxo-gamifica: #47208b; 
+    --laranja-gamifica: #f06638; }
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+.container-grid
+{   max-width: 80%;
+    margin: 0 auto; }
+
+.banner
+{   height: 100vh;
+    background-image: linear-gradient(90deg, rgba(53, 24, 104, 1) 0%, rgba(53, 24, 104, 0.8)), url(img/bg-room.png);
+    background-repeat: no-repeat;
+    background-position: 165% 40%; }
+
+Header
+{   height: 165px; }
+
+header img
+{   width: 234px; }
+
+header .container-grid
+{   height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.menu
+{   width: 700px;
+    display: flex;
+    justify-content: space-between; }
+
+.menu a
+{   font-size: 18px;
+    font-family: 'Anta';
+    color: white;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 500ms ease; }
+
+.menu a:hover
+{   text-decoration-color: white; }
+
+.conteudo-banner
+{   height: calc(100vh - 280px);
+    display: flex;
+    align-items: center; }
+
+.conteudo-banner p
+{   color: white;
+    font-family: "Anta";
+    font-size: 32px; }
+
+#sobre
+{   display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+    padding: 100px 25%;
+    text-align: center; }
+
+h2
+{   font-family: "Anta";
+    font-size: 28px; }
+
+#sobre p
+{   font-size: 17px;
+    text-align: left;
+    font-family: "Montserrat"; 
+    line-height: 150%; }
+
+#cases
+{   text-align: center; 
+    padding-bottom: 100px;
+    margin-bottom: 100px; }
+    
+#cases h2
+{   margin-bottom: 70px; }
+
+.container-cards
+{   display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+
+.card
+{   height:400px;
+    width: 250px;
+    background-color: var(--roxo-gamifica);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px; }
+
+.card p
+{   color: white;
+    font-family: "Montserrat";
+    font-size: 16px;
+    padding: 7%; }
+
+.card button
+{   background-color: var(--laranja-gamifica);
+    height: 40px;
+    width: 90%;
+    border: none;
+    border-radius: 4px;
+    color: white; 
+    font-family: "Montserrat";
+    font-size: 17px; 
+    font-weight: 600;
+    cursor: pointer; 
+    transition: background-color 500ms; }
+
+.card button:hover
+{   background-color: #ad4929; }
+
+.card img
+{   height: 55%;
+    width: 100%;
+    border-radius: 4px 4px 0px 0px; }
