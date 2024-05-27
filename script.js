@@ -97,3 +97,35 @@ listaCase.forEach(cardCase =>
 </div>`})
 
 containerCards.innerHTML = template}
+
+function carregarCases()
+{fetch("http://localhost:3000/cases")
+.then((resposta) => resposta.json())
+.then((dadosTratados) => {console.log(dadosTratados)
+listaCase = dadosTratados
+renderizarCases()})}
+
+function solicitarOrcamento()
+{let valorNome = document.getElementById("campo-nome").value
+let valorEmail = document.getElementById("campo-email").value
+let valorDescricao = document.getElementById("campo-texto").value
+
+let dadosForm = {nome: valorNome,
+email: valorEmail,
+descricao: valorDescricao}
+
+console.log(dadosForm)
+
+fetch("http://localhost:3000/solicitacoes",
+{method: "POST",
+headers: {"Content-Type": "application/json"},
+body: JSON.stringify(dadosForm)})
+.then(resposta => {console.log(resposta)
+
+document.querySelector("#contato form").reset()
+alert("Solicitacao enviada com sucesso!")})
+
+.catch(erro => {console.log(erro)
+alert("Erro na requisicao.")})
+
+event.preventDefault()}

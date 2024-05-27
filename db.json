@@ -1,9 +1,34 @@
 {
-    "cases": [{"imagem": "https://unsplash.it/600/400?image=17", "descricao": "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionarios devem propor e implementar ideias inovadoras."},
-
-    {"imagem": "https://unsplash.it/600/400?image=52", "descricao": "Uma empresa de consultoria cria uma narrativa interativa de gamificação para seu programa de treinamento."},
-
-    {"imagem": "https://unsplash.it/600/400?image=91", "descricao": "Uma empresa de vendas implementa uma competição gamificada entre equipes que competem pelo topo do ranking"},
-        
-    {"imagem": "https://unsplash.it/600/400?image=26", "descricao": "Uma empresa de saúde promove o bem-estar dos funcionários através de um desafio de gamificação de condicionamento físico"}]
+  "cases": [
+    {
+      "imagem": "https://unsplash.it/600/400?image=17",
+      "descricao": "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionarios devem propor e implementar ideias inovadoras."
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=52",
+      "descricao": "Uma empresa de consultoria cria uma narrativa interativa de gamificação para seu programa de treinamento."
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=91",
+      "descricao": "Uma empresa de vendas implementa uma competição gamificada entre equipes que competem pelo topo do ranking"
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=26",
+      "descricao": "Uma empresa de saúde promove o bem-estar dos funcionários através de um desafio de gamificação de condicionamento físico"
+    }
+  ],
+  "solicitacoes": [
+    {
+      "id": "e1b5",
+      "nome": "bigo",
+      "email": "algum@email.com",
+      "descricao": "quero ir embora"
+    },
+    {
+      "id": "8253",
+      "nome": "bigo",
+      "email": "algum@email.com",
+      "descricao": "chega"
+    }
+  ]
 }
